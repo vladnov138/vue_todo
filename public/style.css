@@ -90,8 +90,6 @@ button {
 }
 
 .text-input {
-  display: flex;
-  align-items: center;
   padding: 0.8rem 1.6rem;
   box-sizing: border-box;
   font: inherit;
@@ -151,8 +149,8 @@ button {
 }
 
 .todo-item {
-  display: grid;
-  grid-template-columns: 2.4rem 1fr 1.6rem;
+  /* display: grid; */
+  /* grid-template-columns: 2.4rem 1fr 1.6rem; */
   align-items: center;
   gap: 1.6rem;
   padding: 1.6rem 2rem;
@@ -178,9 +176,9 @@ button {
   font-weight: 300;
 }
 
-.todo-item--done .todo-item__text {
+/* .todo-item--done .todo-item__text {
   text-decoration: line-through;
-}
+} */
 
 .todo-item__status {
   display: flex;
@@ -217,7 +215,7 @@ button {
   transition: opacity 0.2s;
 }
 
-.todo-item:hover .todo-item__remove-button {
+li:hover .todo-item__remove-button {
   opacity: 1;
 }
 
@@ -225,14 +223,14 @@ button {
   color: var(--primary-color);
 }
 
-.add-todo {
+/* .add-todo {
   display: grid;
   gap: 1.6rem;
-}
+} */
 
 .add-todo__show-form-button {
   grid-template-columns: 1fr;
-  justify-items: center;
+  /* justify-items: center; */
   padding: 1.2rem 1.4rem;
   color: var(--primary-color);
   font-size: 1.9rem;
@@ -264,7 +262,5 @@ button {
 }
 
 .app-footer {
-  font-size: 1.4rem;
-  text-align: center;
   color: var(--secondary-color)
 }

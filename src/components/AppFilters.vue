@@ -1,11 +1,11 @@
 <template>
     <aside class="app-filters">
-        <section class="toggle-group">
+        <section class="flex justify-center items-center space-x-2">
           <button 
             class="button" 
             v-for="filter in filters" 
             :key="filter"
-            :class="{'button--primary': activeFilter === filter}"
+            :class="{'button--primary text-3xl font-bold underline': activeFilter === filter}"
             @click="setFilter(filter)">{{ filter }}</button>
         </section>
       </aside>

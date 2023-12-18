@@ -1,5 +1,5 @@
 <template>
-  <li class="todo-item" :class="{ 'todo-item--done': todo.completed }" @click="toggleTodo">
+  <li class="flex justify-between items-center p-10 border border-light-color rounded-lg cursor-pointer hover:shadow-lg" :class="{ 'todo-item--done line-through': todo.completed }" @click="toggleTodo">
     <div class="todo-item__status">
       <i class="bi bi-check2"></i>
     </div>

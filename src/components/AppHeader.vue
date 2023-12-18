@@ -1,5 +1,5 @@
 <template>
-  <header class="app-header">
+  <header class="flex justify-center items-center padding-lg">
     <span class="logo">TODOS</span>
   </header>
 </template>

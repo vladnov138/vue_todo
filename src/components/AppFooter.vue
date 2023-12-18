@@ -1,5 +1,5 @@
 <template>
-  <footer class="app-footer">{{ stats.active }} more to do, {{ stats.done }} done</footer>
+  <footer class="app-footer text-center text-lg">{{ stats.active }} more to do, {{ stats.done }} done</footer>
 </template>
 
 <script lang="ts">

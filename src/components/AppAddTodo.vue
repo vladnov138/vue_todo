@@ -1,15 +1,15 @@
 <template>
-  <section class="add-todo">
+  <section class="add-todo grid">
     <form v-if="isFormVisible" class="add-todo__form" @submit.prevent="addTodo">
       <button class="close-button" type="button" @click="closeForm">
         <i class="bi bi-x"></i>
       </button>
-      <div class="text-input text-input--focus">
+      <div class="flex items-center justify-center text-input text-input--focus">
         <input class="input" v-model="todoText"/>
       </div>
       <button class="button button--filled">Add task</button>
     </form>
-    <button v-else class="add-todo__show-form-button" @click="showForm">
+    <button v-else class="items-center add-todo__show-form-button" @click="showForm">
       <i class="bi bi-plus-lg"></i>
     </button>
   </section>
